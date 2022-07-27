@@ -1,0 +1,8 @@
+C:\KHUSHWANT\CSharp_Practice\Day4_Assignment_Part2\Day4_Assignment_Part2\bin\Debug\Day4_Assignment_Part2.exe.config
+C:\KHUSHWANT\CSharp_Practice\Day4_Assignment_Part2\Day4_Assignment_Part2\bin\Debug\Day4_Assignment_Part2.exe
+C:\KHUSHWANT\CSharp_Practice\Day4_Assignment_Part2\Day4_Assignment_Part2\bin\Debug\Day4_Assignment_Part2.pdb
+C:\KHUSHWANT\CSharp_Practice\Day4_Assignment_Part2\Day4_Assignment_Part2\obj\Debug\Day4_Assignment_Part2.csproj.AssemblyReference.cache
+C:\KHUSHWANT\CSharp_Practice\Day4_Assignment_Part2\Day4_Assignment_Part2\obj\Debug\Day4_Assignment_Part2.csproj.SuggestedBindingRedirects.cache
+C:\KHUSHWANT\CSharp_Practice\Day4_Assignment_Part2\Day4_Assignment_Part2\obj\Debug\Day4_Assignment_Part2.csproj.CoreCompileInputs.cache
+C:\KHUSHWANT\CSharp_Practice\Day4_Assignment_Part2\Day4_Assignment_Part2\obj\Debug\Day4_Assignment_Part2.exe
+C:\KHUSHWANT\CSharp_Practice\Day4_Assignment_Part2\Day4_Assignment_Part2\obj\Debug\Day4_Assignment_Part2.pdb

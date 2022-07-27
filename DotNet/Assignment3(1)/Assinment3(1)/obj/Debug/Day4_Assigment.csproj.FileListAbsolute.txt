@@ -1,0 +1,8 @@
+C:\KHUSHWANT\CSharp_Practice\Day4_Assigment\Day4_Assigment\bin\Debug\Day4_Assigment.exe.config
+C:\KHUSHWANT\CSharp_Practice\Day4_Assigment\Day4_Assigment\bin\Debug\Day4_Assigment.exe
+C:\KHUSHWANT\CSharp_Practice\Day4_Assigment\Day4_Assigment\bin\Debug\Day4_Assigment.pdb
+C:\KHUSHWANT\CSharp_Practice\Day4_Assigment\Day4_Assigment\obj\Debug\Day4_Assigment.csproj.AssemblyReference.cache
+C:\KHUSHWANT\CSharp_Practice\Day4_Assigment\Day4_Assigment\obj\Debug\Day4_Assigment.csproj.SuggestedBindingRedirects.cache
+C:\KHUSHWANT\CSharp_Practice\Day4_Assigment\Day4_Assigment\obj\Debug\Day4_Assigment.csproj.CoreCompileInputs.cache
+C:\KHUSHWANT\CSharp_Practice\Day4_Assigment\Day4_Assigment\obj\Debug\Day4_Assigment.exe
+C:\KHUSHWANT\CSharp_Practice\Day4_Assigment\Day4_Assigment\obj\Debug\Day4_Assigment.pdb
