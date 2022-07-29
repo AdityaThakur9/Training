@@ -25,11 +25,11 @@
         <asp:Label ID="Quanr" runat="server" Text="Quantiy"></asp:Label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <asp:TextBox ID="Quantity" runat="server" TextMode="Number"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="Quantity" ErrorMessage="Quantity should be between 100 and 1000" ForeColor="Red">*</asp:RequiredFieldValidator>
-        <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="Quantity" ErrorMessage="Quantity should be between 100 and 1000" ForeColor="Red" MaximumValue="1000" MinimumValue="100"></asp:RangeValidator>
+        <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="Quantity" ErrorMessage="Quantity should be between 100 and 1000" ForeColor="Red" MaximumValue="1000" MinimumValue="100" Display="Dynamic" Type="Integer"></asp:RangeValidator>
         <br />
         <asp:Label ID="S_Date" runat="server" Text="Supply Date"></asp:Label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <asp:TextBox ID="SDate" runat="server" TextMode="DateTimeLocal"></asp:TextBox>
-         <asp:RangeValidator ID="RangeValidator2" runat="server" ControlToValidate="SDate" Display="Dynamic" ErrorMessage="Only current date is valid" MaximumValue="Date.Today" MinimumValue="Date.Today"></asp:RangeValidator>
+         <asp:RangeValidator ID="RangeValidator2" runat="server" ControlToValidate="SDate" Display="Dynamic" ErrorMessage="Only current date is valid" ForeColor="Red" Type="Date"></asp:RangeValidator>
          <br />
         <asp:Label ID="R_By" runat="server" Text="Recieved By"></asp:Label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <asp:DropDownList ID="DropdownList" runat="server">
@@ -41,9 +41,12 @@
          <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="Rec_Num" ErrorMessage="Enter a valid number" ForeColor="Red">*</asp:RequiredFieldValidator>
          <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="Rec_Num" ErrorMessage="Enter a Valid number" ForeColor="Red" ValidationExpression="\d{10}"></asp:RegularExpressionValidator>
          <br /><br />
-        <asp:Label ID="Invoice" runat="server" Text="Invoice Provided?"></asp:Label>&nbsp&nbsp&nbsp&nbsp<asp:RadioButton ID="RadioButton1" Text="Yes" runat="server" />
-        &nbsp&nbsp&nbsp<asp:RadioButton ID="RadioButton2" Text="No" runat="server" />
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <asp:Label ID="Invoice" runat="server" Text="Invoice Provided?"></asp:Label>&nbsp<asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal">
+        <asp:ListItem>Yes</asp:ListItem>
+            <asp:ListItem>No</asp:ListItem>
+        </asp:RadioButtonList>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="Select one" ControlToValidate="RadioButtonList1" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         &nbsp;<p>
             <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
         </p>

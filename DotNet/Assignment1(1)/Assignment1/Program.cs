@@ -21,7 +21,7 @@ namespace Assignment1
 
         public static void problem1()
         {
-            int[] array = { 5, 91, 1, 6, 9, 22, 17, 6 };
+            int[] array = { 15, 1, 11, 26, 90, 2, 7, 61 };
 
             int size = array.Length;
 
@@ -33,9 +33,9 @@ namespace Assignment1
 
             Array.Sort(array);
 
-            Console.WriteLine("Average:" + sum / size);
-            Console.WriteLine("Minimum: " + array[0]);
-            Console.WriteLine("Maximum: " + array[size - 1]);
+            Console.WriteLine("The Average is :" + sum / size);
+            Console.WriteLine(" The Minimum is: " + array[0]);
+            Console.WriteLine(" The Maximum is : " + array[size - 1]);
 
 
             Console.ReadLine();
@@ -52,17 +52,17 @@ namespace Assignment1
             int size = 10;
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine("Enter numbers : {0}", (i + 1));
+                Console.WriteLine("Enter Elements : {0}", (i + 1));
                 array[i] = Convert.ToInt32(Console.ReadLine());
                 sum += array[i];
             }
 
             Array.Sort(array);
 
-            Console.WriteLine("Total is :- " + sum);
-            Console.WriteLine("Average is :- " + sum / size);
-            Console.WriteLine("Minimum is :-" + array[0]);
-            Console.WriteLine("Maximum is :- " + array[size - 1]);
+            Console.WriteLine("Total of element is :- " + sum);
+            Console.WriteLine("Average of element is :- " + sum / size);
+            Console.WriteLine("Minimum of element is :-" + array[0]);
+            Console.WriteLine("Maximum of element is :- " + array[size - 1]);
 
             Console.WriteLine("array is ascending Order is :- ");
 
@@ -124,8 +124,7 @@ namespace Assignment1
 
         }
 
-        //Problem 4 solution function
-
+        
         public static void stringman()
         {
 
@@ -136,13 +135,13 @@ namespace Assignment1
 
             string y = new string(a.Reverse().ToArray());
 
-            Console.WriteLine("Reverse of given word is " + y);
+            Console.WriteLine("Reverse:" + y);
 
-            Console.WriteLine("First word to compare: ");
+            Console.WriteLine("First word : ");
 
             string c = Console.ReadLine();
 
-            Console.WriteLine("Second word to compare is : ");
+            Console.WriteLine("Second word  : ");
             string d = Console.ReadLine();
 
             if (String.Equals(c, d))

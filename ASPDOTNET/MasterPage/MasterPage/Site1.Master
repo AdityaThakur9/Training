@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MasterPage.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        body,div,p,ul,li{
+            padding:0;
+            margin:0;
+            background-color:white;
+            font-style:normal;
+        }
+        menu{
+            background-color:black;
+            width:100%;
+
+        }
+        navigation_first_item{
+            border-left: 0px;
+            border-radius:5px 0px 0px 5px;
+        }
+        navitem_s{
+            float:left;
+            border-left:1px solid;
+            border-right:1px solid;
+            height:40px;
+            background-color:rgb(14,79,114);
+        }
+        menu ul li{
+            float:left;
+            display:block;
+            list-style:none;
+            border-right:1px solid;
+            border-left:1px solid;
+        }
+        menu ul li.navigation_first_item:hover{
+            border-radius:5px 0px 0px 5px;
+        }
+        menu ul li a{
+            font-size:13px;
+            line-height:40px;
+            padding:8px 20px;
+            color:rgb(255,255,255);
+            text-decoration:none;
+        }
+        menu ul li:hover
+        {
+          background-color: rgb(14,79,114);
+          border-right:1px solid rgb(14,89,130);
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <div class="menu">
+                <ul>
+                    <li><a href="Webform1.aspx">Home</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            <h6>&#169Aditya assignment</h6>
+        </div>
+        <asp:HiddenField ID="HiddenField1" runat="server" OnValueChanged="HiddenField1_ValueChanged" />
+        <asp:Button ID="Button1" runat="server" Text="ste" />
+    </form>
+</body>
+</html>

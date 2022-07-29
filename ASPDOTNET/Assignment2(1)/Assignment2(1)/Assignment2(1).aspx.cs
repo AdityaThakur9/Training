@@ -21,13 +21,22 @@ namespace Assignment2_1_
                 }
             }
 
-            CompareValidator1.ValueToCompare = DateTime.Now.ToShortDateString();
+            RangeValidator2.MaximumValue = DateTime.Today.ToShortDateString();
+            RangeValidator2.MinimumValue = DateTime.Today.ToShortDateString();
 
-            
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            if (Page.IsValid)
+            {
+                Response.Write("Validated");
+            }
+            else
+            {
+                Response.Write("Not Valid");
+            }
 
         }
     }
